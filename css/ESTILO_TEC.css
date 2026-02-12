@@ -1,0 +1,126 @@
+borda-a{
+    background-color: rgb(5, 111, 5);
+    grid-area: borda-a;
+}
+
+header{
+    background-color: aliceblue;
+    grid-area: header;
+}
+
+.logo{
+    align-content: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+nav{
+    background-color: aliceblue;
+    grid-area: nav;
+    font-weight: bold;
+}
+
+borda-b{
+    background-color: #0056CB;
+    grid-area: borda-b;
+}
+
+faixa{
+    background-color: #0095E3;
+    font-size: 30px;
+    grid-area: faixa;
+    text-align: center;
+    align-content: center;
+    color: aliceblue;
+}
+
+main{
+    background-color: aliceblue;
+    grid-area: main;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.titulo{
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 30px;
+}
+
+.principal{
+    font-size: 15px;
+    font-family: Arial;
+    text-align: justify;
+}
+
+.imagem{
+    padding: 20px;
+}
+
+aside-e{
+    background-color:white;
+    grid-area: aside-e;
+}
+aside-d{
+    background-color:white;
+    grid-area: aside-d;
+}
+
+borda-c{
+    background-color: #0056CB;
+    grid-area: borda-c;
+}
+
+footer{
+    background-color: aliceblue;
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 3vh auto 5vh 2vh 15vh auto 2vh auto;
+    grid-template-areas:
+    "borda-a borda-a borda-a"
+    "header header header"
+    "nav nav nav"
+    "borda-b borda-b borda-b"
+    "faixa faixa faixa"
+    "aside-e main aside-d"
+    "borda-c borda-c borda-c"
+    "footer footer footer";
+}
+
+.contato {
+    text-align: center;
+}
+
+table {
+        width: 100%;
+        border-collapse: collapse; /* Faz as bordas da tabela ficarem mais próximas */
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    td {
+        border-right: 2px solid #000; /* Borda mais espessa no meio */
+    }
+
+
+    td {
+        background-color: #087b125f; /* Cor de fundo para a coluna da direita */
+    }
+
+    th {
+        background-color: rgb(5, 111, 5); /* Fundo para os títulos */
+    }

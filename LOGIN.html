@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ESTILO_LOGIN.css">
+</head>
+
+<body>
+    <!--INÍCIO CONTAINER-->
+    <div class="container">
+
+        <borda-a>
+        </borda-a>
+
+        <!--CABEÇALHO-->
+        <header>
+            <!--LOGO DA FUNDAÇÃO-->
+            <div class="logo">
+                <a href="INDEX.html"><img src="img/FTD.png" alt="" width="10%"></a>
+            </div>
+        </header>
+
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar navbar-expand-lg" style="background-color: aliceblue;" data-bs-theme="light">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <!-- Left links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="INDEX.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            UNIDADES DE ENSINO
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="FACULDADE.html">FACULDADE</a></li>
+                            <li><a class="dropdown-item" href="ETTD.html">ETTD</a></li>
+                            <li><a class="dropdown-item" href="COLEGIO.html">COLÉGIO</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="INSCRICOES.html">INSCRIÇÕES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CONTATO_FUND.html">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <borda-b></borda-b>
+
+        <faixa>
+            LOGIN
+        </faixa>
+
+        <!--CORPO PRINCIPAL-->
+        <main>
+            <form class="row g-3" method="post" id="loginForm">
+
+                <!--TIPO DE USUÁRIO-->
+                <div class="col-md-12 mb-3">
+                    <label for="userType" class="form-label">Tipo de Usuário</label>
+                    <select class="form-select" id="userType" required>
+                        <option value="" selected disabled>Escolha...</option>
+                        <option value="alunoFAC">Aluno - Faculdade</option>
+                        <option value="alunoETTD">Aluno - ETTD</option>
+                        <option value="alunoCOL">Aluno - Colégio</option>
+                        <option value="professor">Professor</option>
+                    </select>
+                </div>
+
+                <!--EMAIL-->
+                <div class="col-md-12 form-floating mb-3">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                    <label for="inputEmail">Email ou Código</label>
+                </div>
+
+                <!--SENHA-->
+                <div class="col-md-12 form-floating mb-3">
+                    <input type="password" class="form-control" id="inputSenha" placeholder="Senha" required>
+                    <label for="inputSenha">Senha</label>
+                </div>
+
+                <!--BOTÃO LOGIN-->
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </div>
+            </form>
+        </main>
+
+        <aside-e></aside-e>
+
+        <aside-d></aside-d>
+
+        <borda-c></borda-c>
+
+        <!--RODAPÉ-->
+        <footer>
+        <!--LOGO DA FUNDAÇÃO-->
+            <div class="logo">
+                <img src="img/FTD.png" alt="" width="10%">
+                <br><br>
+                FACULDADE TEREZA DELTA | FUNDAÇÃO TEREZA DELTA
+            </div>
+        </footer>
+    </div><!--FIM 'CONTAINER'-->
+
+    <!--SCRIPT JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

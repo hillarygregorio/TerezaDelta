@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAG TEMPLATE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ESTILO_FUN.css">
+</head>
+
+<body>
+    <!--INÍCIO CONTAINER-->
+    <div class="container">
+        <!--DIVISÓRIA-->
+        <borda-a>
+        </borda-a>
+
+        <!--CABEÇALHO-->
+        <header>
+            <!--LOGO DA FUNDAÇÃO-->
+            <div class="logo">
+                <a href="INDEX.html"><img src="img/FTD.png" alt="" width="10%"></a>
+            </div>
+        </header>
+
+        <!--BARRA DE NAVEGAÇÃO-->
+        <nav class="navbar navbar-expand-lg" style="background-color: aliceblue;" data-bs-theme="light">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <!-- Left links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="INDEX.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            UNIDADES DE ENSINO
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="FACULDADE.html">FACULDADE</a></li>
+                            <li><a class="dropdown-item" href="ETTD.html">ETTD</a></li>
+                            <li><a class="dropdown-item" href="COLEGIO.html">COLÉGIO</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="INSCRICOES.html">INSCRIÇÕES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CONTATO_FUND.html">CONTATO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LOGIN.html">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--DIVISÓRIA-->
+        <borda-b>
+        </borda-b>
+
+        <!--FAIXA COM NOME DA PÁGINA-->
+        <!--LEMBRE DE COLOCAR O MESMO QUE O TÍTULO NA ABA-->
+        <faixa>
+            INSCRIÇÕES
+        </faixa>
+
+        <!--CORPO PRINCIPAL-->
+        <main>
+            <!--problema forms select: prompt ,, modal
+            <h1 class="titulo"> Alinha centro, fonte Times New Roman, transforma em versalete-->
+            <!-- <div class="texto"> Justifica o texto, fonte para Arial, size 15-->
+            <!-- <img src="" alt="" width="100%" class="imagem"> Põe margem e permanece grande-->
+            <form class="row g-3" method="get">
+
+              <h1 class="titulo">Dados Pessoais</h1>
+
+                <!--INPUT DO EMAIL-->
+                <div class="col-md-6 form-floating">
+                    <input type="email" class="form-control" id="inputEMAIL" placeholder="Email" required>
+                    <label for="inputEMAIL" class="form-label">Email</label>
+                </div>
+                <!-- FIM EMAIL -->
+
+                <!-- INPUT FONE -->
+                <div class="col-md-6 form-floating">
+                    <input type="text" class="form-control" id="inputFONE" placeholder="Fone" required>
+                    <label for="inputFONE" class="form-label">Fone para Contato</label>
+                </div>
+                <!-- FIM FONE -->
+
+                <!-- INPUT NOME -->
+                <div class="col-12 form-floating">
+                    <input type="text" class="form-control" id="inputNOME" placeholder="Nome Completo" required>
+                    <label for="inputNOME" class="form-label">Nome Completo</label>
+                </div>
+                <!-- FIM NOME -->
+
+                <!--INPUT CPF-->
+                <div class="col-sm-4 form-floating">
+                  <input type="text" class="form-control" id="inputCPF" placeholder="CPF" required>
+                  <label for="inputCPF" class="form-label">CPF</label>
+                </div>
+                <!--FIM CPF-->
+              
+                <!--INPUT DOCUMENTO-->
+                <div class="col-sm-4 form-floating">
+                  <input type="text" class="form-control" id="inputDOC" placeholder="RG / RNE" required>
+                  <label for="inputDOC" class="form-label">RG / RNE</label>
+                </div>
+                <!--FIM DOCUMENTO-->
+              
+                <!--INPUT ORGAO EMISSOR-->
+                <div class="col-sm-4 form-floating">
+                  <input type="text" class="form-control" id="inputOREM" placeholder="Órgão Emissor" required>
+                  <label for="inputOREM" class="form-label">Órgão Emissor</label>
+                </div>
+                <!--FIM ORGAO EMISSOR-->
+
+                
+
+                <!--INPUT NACIONALIDADE-->
+                <div class="col-md-6 form-floating">
+                    <input type="text" class="form-control" id="inputNAC" placeholder="Nacionalidade" required>
+                    <label for="inputNAC" class="form-label">Nacionalidade</label>
+                </div>
+                <!--FIM NACIONALIDADE-->
+
+                <!--INPUT NATURALIDADE-->
+                <div class="col-md-6 form-floating">
+                    <input type="text" class="form-control" id="inputNAT" placeholder="Naturalidade" required>
+                    <label for="inputNaturalidade" class="form-label">Naturalidade</label>
+                </div>
+                <!--FIM NATURALIDADE-->
+
+                <!--INPUT SEXO-->
+
+                <div class="col-md-4 form-floating">
+                  <select name="inputSEXO" class="form-select" id="inputSEXO" required>
+                      <option value="" selected disabled>Selecione um sexo</option>
+                      <option value="FEM">Feminino</option>
+                      <option value="MAS">Masculino</option>
+                      <option value="INT">Intersexo</option>
+                  </select>
+                  <label for="inputSEXO">Sexo</label>
+                </div>
+              
+                <!--FIM SEXO-->
+
+                <!--INPUT DTA NASC-->
+                <div class="col-md-3 form-floating">
+                  <input type="date" class="form-control" id="inputDTA_NASC" required>
+                  <label for="inputDTA_NASC">Data de Nascimento</label>
+                </div>
+                <!--FIM DTA NASC-->
+
+                <!--INPUT EST CIV-->
+                <div class="col-md-5 form-floating">
+                  <select name="inputEST_CIV" class="form-select" id="inputEST_CIV" required>
+                      <option value="" selected disabled>Selecione um Estado Civil</option>
+                      <option value="SOL">Solteiro</option>
+                      <option value="CAS">Casado</option>
+                      <option value="DIV">Divorciado</option>
+                      <option value="VIU">Viúvo</option>
+                      <option value="UNES">União Estável</option>
+                  </select>
+                  <label for="inputEST_CIV">Estado Civil</label>
+                </div>
+                <!--FIM EST CIV-->
+
+                <!--INPUT AF MAE-->
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="inputF_MAT" placeholder="Filiação Materna" required>
+                  <label for="inputF_MAT">Afiliação Materna</label>
+                </div>
+                <!--FIM AF MAE-->
+
+                <!--INPUT AF PAI-->
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="inputF_PAT" placeholder="Filiação Paterna">
+                  <label for="inputF_PAT">Afiliação Paterna</label>
+                </div>
+                <!--FIM AF PAI-->
+
+                <h1 class="titulo">Logradouro</h1>
+
+                <!--INPUT ENDERECO-->
+                <div class="col-12 form-floating">
+                  <input type="text" class="form-control" id="inputENDERECO" placeholder="Endereço" required>
+                  <label for="inputENDERECO" class="form-label">Endereço</label>
+                </div>
+                <!--FIM ENDERECO-->
+
+                <!--INPUT NUM ENDERECO-->
+                <div class="col-md-2 form-floating">
+                    <input type="number" class="form-control" id="inputNUMERO" placeholder="Número" required>
+                    <label for="inputNUMERO" class="form-label">Número</label>
+                </div>
+                <!--FIM NUM ENDERECO-->
+
+                <!--INPUT BAIRRO-->
+                <div class="col-5 form-floating">
+                    <input type="text" class="form-control" id="inputBAIRRO" placeholder="Bairro" required>
+                    <label for="inputBAIRRO" class="form-label">Bairro</label>
+                </div>
+                <!--FIM BAIRRO-->
+
+                <!--INPUT COMPLEMENTO-->
+                <div class="col-5 form-floating">
+                    <input type="text" class="form-control" id="inputCOMPLEMENTO" placeholder="Apartmento, bloco, casa" required>
+                    <label for="inputCOMPLEMENTO" class="form-label">Complemento</label>
+                </div>
+                <!--FIM COMPLEMENTO-->
+
+                <!--INPUT CIDADE-->
+                <div class="col-md-6 form-floating">
+                  <input type="text" class="form-control" id="inputCIDADE" placeholder="Cidade" required>
+                  <label for="inputCIDADE" class="form-label">Cidade</label>
+                </div>
+                <!--FIM CIDADE-->
+
+                <!--INPUT ESTADO-->
+                <div class="col-md-4 form-floating">
+                  <input type="text" class="form-control" id="inputUF" placeholder="UF" required>
+                  <label for="inputUF" class="form-label">UF</label>
+                </div>
+                <!--FIM SELECT ESTADO-->
+
+                <!--INPUT CEP-->
+                <div class="col-md-2 form-floating">
+                  <input type="text" class="form-control" id="inputCEP" placeholder="CEP" value=""
+                  size="10" maxlength="9" onblur="pesquisacep(this.value);"  required>
+                  <label for="inputCEP" class="form-label">CEP</label>
+                </div>
+                <!--FIM CEP-->
+
+                <br>
+                <!--RADIO INST-->
+                <h1 class="titulo">Instituição de Ensino</h1>
+                <br>
+
+                <div>
+
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="INSTITUICAO_ESC" id="INSTITUICAO_COL_TEC"
+                    value="COL_TEC" onclick="switchSel('COL_TEC')">
+                    <label class="form-check-label" for="INSTITUICAO_COL_TEC">Colégio Técnico</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="INSTITUICAO_ESC" id="INSTITUICAO_TEC_AGRO"
+                    value="TEC_AGRO" onclick="switchSel('TEC_AGRO')">
+                    <label class="form-check-label" for="INSTITUICAO_TEC_AGRO">Curso Técnico</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="INSTITUICAO_ESC" id="INSTITUICAO_GRAD_FAC"
+                    value="GRAD_FAC" onclick="switchSel('GRAD_FAC')">
+                    <label class="form-check-label" for="INSTITUICAO_GRAD_FAC">Faculdade</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="INSTITUICAO_ESC" id="INSTITUICAO_POS_GRAD"
+                    value="POS_GRAD" onclick="switchSel('POS_GRAD')">
+                    <label class="form-check-label" for="INSTITUICAO_POS_GRAD">Pós-Graduação</label>
+                  </div>
+
+                </div>
+                <!--FIM RADIO INST-->
+              
+                <!--RADIO COL-->
+
+                <div id="COL_TEC" style="display: none;">
+                  <h1 class="titulo">Curso Técnico integrado ao Ensino Médio</h1>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ENS_TEC" id="ENS_TEC" value="TEC_INF">
+                    <label class="form-check-label" for="TEC_INF">Técnico em Informática</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ENS_TEC" id="ENS_TEC" value="TEC_MEC">
+                    <label class="form-check-label" for="TEC_MEC">Técnico em Mecânica</label>
+                  </div>
+                </div>
+
+                <!--FIM RADIO COL-->
+
+                <br>
+
+                <!--RADIO FACUL-->
+
+                <div id="GRAD_FAC" style="display: none;">
+                  <h1 class="titulo">Curso de Graduação</h1>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CURS_GRAD" id="CURS_GRAD" value="GRAD_COMP">
+                    <label class="form-check-label" for="GRAD_COMP">Graduação em Eng. da Computação</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CURS_GRAD" id="CURS_GRAD" value="GRAD_AUTO">
+                    <label class="form-check-label" for="GRAD_AUTO">Graduação em Eng. de Controle da Automação</label>
+                  </div>
+                </div>
+
+                <!--FIM RADIO FACUL-->
+                <br>
+                <!--RADIO POS-->
+                
+                <div id="POS_GRAD" style="display: none;">
+                  <h1 class="titulo">Curso de Pós-Graduação</h1>
+                  <br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CURS_POS" id="CURS_POS" value="POS_ED">
+                    <label class="form-check-label" for="POS_ED">Pós Grad. em Gestão Educacional</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="CURS_POS" id="CURS_POS" value="POS_GES">
+                    <label class="form-check-label" for="POS_GES">Pós Grad. em G. de Proj. em Inovação e Sustentabilidade</label>
+                  </div>
+                </div>
+
+                <!--FIM RADIO POS-->
+                <br>
+                <!--INPUT TERMOS-->
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="Termos">
+                    <label class="form-check-label" for="Termos">
+                      Eu concordo com os Termos
+                    </label>
+                  </div>
+                </div>
+                <!--FIM TERMOS-->
+                <!--BOTAO CONCLUIR-->
+                <div>
+                  <button type="submit" class="btn btn-primary" onclick="return Verificacao();">Enviar Formulário</button>
+                <!--FIM BOTAO CONCLUIR-->
+                <!--BOTAO RESET-->
+                  <button type="reset" class="btn btn-primary">Limpar Formulário</button>
+                <!--FIM BOTAO RESET-->
+                </div>
+              </form>
+        </main>
+        
+        <!--CAIXA LADO ESQUERDO-->
+        <aside-e>
+        </aside-e>
+        
+        <!--CAIXA LADO DIREITO-->
+        <aside-d>
+        </aside-d>
+
+        <!--DIVISÓRIA-->
+        <borda-c>
+        </borda-c>
+
+        <!--RODAPÉ-->
+        <footer>
+            <!--LOGO DA FUNDAÇÃO-->
+            <div class="logo">
+                <img src="img/FTD.png" alt="" width="10%">
+                <br><br>
+                FACULDADE TEREZA DELTA | FUNDAÇÃO TEREZA DELTA
+            </div>
+        </footer>
+    </div>
+    <!--FIM 'CONTAINER'-->
+
+  <!-- SCRIPTS -->
+  <script src="js/script.js"></script>
+  <!-- SCRIPT JS !!! NÃO TOQUE !!! CAGA COM O BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <!-- FIM SCRIPTS --> 
+</body>
+</html>
