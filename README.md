@@ -12,7 +12,6 @@ informações, identidade visual clara e navegação simples, simulando um site 
 
 # Instruções de Execução
 
-## Site
 1. Abrir a pasta do projeto
 2. Executar o arquivo `index.html` em um navegador
 3. Navegar pelas páginas disponíveis 
